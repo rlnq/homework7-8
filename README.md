@@ -38,7 +38,7 @@ On the nodes, you will need to add the public key to the authorized_keys file ( 
 
 Then run our ansible project on the main ansible-server using the command:
 
-`ansible-playbook -i hosts side.yml `
+> `ansible-playbook -i hosts side.yml `
 
 <img width="1242" alt="Screenshot 2023-01-14 at 15 10 48" src="https://user-images.githubusercontent.com/117667360/212473192-dd77e429-c2ed-483e-8255-0226b147d349.png">
 

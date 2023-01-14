@@ -44,4 +44,8 @@ On node-server we again try to enter passwords like "root123", "root1234" or eve
 
 <img width="779" alt="Screenshot 2023-01-14 at 15 19 20" src="https://user-images.githubusercontent.com/117667360/212473620-823576ae-2616-4054-837c-28cb7baca1d4.png">
 
+Теж саме виконаємо для користувача ubuntu, використавши паролі, такі як "ubuntu123", "UBUNTU1234", "Ubuntu12345"
+
+<img width="776" alt="Screenshot 2023-01-14 at 15 23 14" src="https://user-images.githubusercontent.com/117667360/212473938-d2f75b5b-4a88-4163-b492-a1cd4225aad6.png">
+
 

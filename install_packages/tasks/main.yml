@@ -1,0 +1,18 @@
+---
+# tasks file for install_packages
+  - name: forcefully remove libpam-pwquality and cracklib-runtime
+    apt:
+      name:
+        - libpam-pwquality
+        - cracklib-runtime
+      state: absent
+      purge: yes
+      force: yes
+
+  - name: install libpam-pwquality and cracklib-runtime
+    apt:
+      name:
+        - libpam-pwquality
+        - cracklib-runtime
+      state: present
+

@@ -1,0 +1,13 @@
+- name: install packages
+  hosts: group1
+  gather_facts: yes
+
+  roles:
+        - install_packages
+
+- name: confifgure_pam
+  hosts: group1
+  gather_facts: yes
+
+  roles:
+        - configure_pam

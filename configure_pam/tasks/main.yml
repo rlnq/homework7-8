@@ -1,0 +1,14 @@
+---
+# tasks file for configure_pam
+
+  - name: configure pam to use pwquality
+    lineinfile:
+      path: /etc/pam.d/common-password
+      regexp: 'password.*pam_unix.so'
+      line: 'password        [success=1 default=ignore]      pam_unix.so obscure use_authtok try_first_pass yescrypt'
+
+  - name: configure pam to use cracklib
+    lineinfile:
+      path: /etc/pam.d/common-password
+      regexp: 'password.*pam_pwquality.so'
+      line: 'password    requisite    pam_pwquality.so retry=3 usercheck=1 enforce_for_root'

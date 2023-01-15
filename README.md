@@ -35,6 +35,10 @@ Configure SSH access: Ansible uses SSH to connect to the nodes. You will need to
 On the main server, you will need to generate an SSH key ( `ssh-keygen` ) and copy the public key ( ~/.ssh/id_rsa.pub ) to the nodes. 
 On the nodes, you will need to add the public key to the authorized_keys file ( ~/.ssh/authorized_keys ).
 
+Go to the project folder: 
+
+> `cd homework7-8`
+
 
 Then run our ansible project on the main ansible-server using the command:
 

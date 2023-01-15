@@ -33,7 +33,7 @@ sudo python3 -m pip install ansible
 
 > `cd homework7-8`
 
-* Configure the Ansible inventory: change specify the IP addresses or hostnames of the nodes in `hosts` you want to connect to.
+* Configure the Ansible inventory: change <ip_address> to the host IP address of the node in the `hosts` file you want to connect to.
 
 * Configure SSH access: Ansible uses SSH to connect to the nodes. You will need to configure SSH access on the main server and the nodes. 
 On the main server, you will need to generate an SSH key ( `ssh-keygen` ) and copy the public key ( ~/.ssh/id_rsa.pub ) to the nodes. 

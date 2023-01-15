@@ -25,22 +25,21 @@ sudo python3 -m pip install ansible
 
 ## Steps:
 
-Use 'git clone' to clone this repository using Git
+* Use 'git clone' to clone this repository using Git
 
 > `git clone https://github.com/rlnq/homework7-8.git`
 
-Configure the Ansible inventory: change specify the IP addresses or hostnames of the nodes in 'hosts' you want to connect to.
-
-Configure SSH access: Ansible uses SSH to connect to the nodes. You will need to configure SSH access on the main server and the nodes. 
-On the main server, you will need to generate an SSH key ( `ssh-keygen` ) and copy the public key ( ~/.ssh/id_rsa.pub ) to the nodes. 
-On the nodes, you will need to add the public key to the authorized_keys file ( ~/.ssh/authorized_keys ).
-
-Go to the project folder: 
+* Go to the project folder: 
 
 > `cd homework7-8`
 
+* Configure the Ansible inventory: change specify the IP addresses or hostnames of the nodes in `hosts` you want to connect to.
 
-Then run our ansible project on the main ansible-server using the command:
+* Configure SSH access: Ansible uses SSH to connect to the nodes. You will need to configure SSH access on the main server and the nodes. 
+On the main server, you will need to generate an SSH key ( `ssh-keygen` ) and copy the public key ( ~/.ssh/id_rsa.pub ) to the nodes. 
+On the nodes, you will need to add the public key to the authorized_keys file ( ~/.ssh/authorized_keys ).
+
+* Then run our ansible project on the main ansible-server using the command:
 
 > `ansible-playbook -i hosts side.yml `
 
@@ -49,9 +48,4 @@ Then run our ansible project on the main ansible-server using the command:
 On the node server, we again try to enter passwords like "123456789", "root123" or "ROOT12345" using "passwd root" for the root user and see:
 
 <img width="1221" alt="Screenshot 2023-01-14 at 15 33 08" src="https://user-images.githubusercontent.com/117667360/212474372-015d07d8-8749-4646-b874-6c907a9bea68.png">
-
-We will do the same for the ubuntu user, using passwords such as "123456789", "ubuntu123", "UBUNTU12345"
-
-<img width="1242" alt="Screenshot 2023-01-14 at 15 29 49" src="https://user-images.githubusercontent.com/117667360/212474238-5c61e1da-a9b3-4dfb-93fe-5ec3f23c9b31.png">
-
 

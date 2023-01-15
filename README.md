@@ -48,4 +48,3 @@ On the nodes, you will need to add the public key to the authorized_keys file ( 
 On the node server, we again try to enter passwords like "123456789", "root123" or "ROOT12345" using "passwd root" for the root user and see:
 
 <img width="1221" alt="Screenshot 2023-01-14 at 15 33 08" src="https://user-images.githubusercontent.com/117667360/212474372-015d07d8-8749-4646-b874-6c907a9bea68.png">
-
